@@ -25,7 +25,7 @@ public class BubbleSortGame : MonoBehaviour
         }
         foreach (Number n in gameRules.numbers)
         {
-            n.GetComponent<RectTransform>().DOAnchorPosY(GameRules.NUMBER_SIZE * 0.8f, 0.5f);
+            n.GetComponent<RectTransform>().DOAnchorPosY(GameRules.NUMBER_SIZE * 0.75f, 0.5f);
             yield return new WaitForSeconds(0.1f);
         }
     }

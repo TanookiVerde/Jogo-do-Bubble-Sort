@@ -29,6 +29,7 @@ public class GameRules : MonoBehaviour
             go.GetComponent<Number>().Initialize(rand);
             var pos = new Vector3(i * NUMBER_SIZE + 640 - NUMBER_SIZE * numberQuantity * 0.5f + NUMBER_SIZE * 0.5f, NUMBER_SIZE * 0.8f, 0);
             go.GetComponent<RectTransform>().anchoredPosition = pos;
+            go.GetComponent<RectTransform>().DOScale(0.6f + 0.6f * rand/8f, 0);
             numbers.Add(go.GetComponent<Number>());
         }
     }
